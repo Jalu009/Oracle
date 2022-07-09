@@ -16,11 +16,23 @@ import javafx.stage.Stage;
 
 public class LoginDocumentController implements Initializable {
 
-    @FXML
-    private TextField tfEmail;
+   @FXML
+    private TextField tfUsername;
     
     @FXML
-    private TextField tfPassword;
+    private void loginButtonAction(ActionEvent event) throws IOException {
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("FXMLDocument_1.fxml"));
+        Parent scene2 = loader.load();
+            
+        FXMLDocument_1_Controller login = loader.getController();
+        login.getData(tfUsername.getText());
+        
+        Stage stage = new Stage();
+        stage.setScene(new Scene(scene2));
+        stage.setTitle("Home Page");
+        stage.show();
+        System.out.println(tfUsername.getText());   
+    }
     
    
     @FXML

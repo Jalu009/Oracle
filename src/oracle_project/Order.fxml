@@ -20,17 +20,17 @@
          <font>
             <Font size="22.0" />
          </font></Text>
-      <ImageView fitHeight="126.0" fitWidth="186.0" layoutX="207.0" layoutY="102.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../../../../Jalu%20Data%20Kuliah/Gambar%20Project/google8sah.jpg" />
-         </image>
-      </ImageView>
-      <TextField layoutX="110.0" layoutY="235.0" prefHeight="25.0" prefWidth="410.0" text="Fort Greene Park, Dekalb Avenue &amp;, S Portland Ave, 11205, United States" />
-      <TextField layoutX="110.0" layoutY="268.0" prefHeight="25.0" prefWidth="410.0" text="Use current location" />
-      <TextField layoutX="110.0" layoutY="303.0" prefHeight="25.0" prefWidth="410.0" text="Add a new location" />
-      <TextField layoutX="110.0" layoutY="340.0" prefHeight="25.0" prefWidth="410.0" text="Home" />
-      <TextField layoutX="110.0" layoutY="365.0" prefHeight="25.0" prefWidth="410.0" text="Office" />
+      <TextField layoutX="110.0" layoutY="235.0" prefHeight="25.0" prefWidth="410.0" promptText="Fort Greene Park, Dekalb Avenue &amp;, S Portland Ave, 11205, United States" />
+      <TextField layoutX="110.0" layoutY="268.0" prefHeight="25.0" prefWidth="410.0" promptText="Use current location" />
+      <TextField layoutX="110.0" layoutY="303.0" prefHeight="25.0" prefWidth="410.0" promptText="Add a new location" />
+      <TextField layoutX="110.0" layoutY="340.0" prefHeight="25.0" prefWidth="410.0" promptText="Home" />
+      <TextField layoutX="110.0" layoutY="365.0" prefHeight="25.0" prefWidth="410.0" promptText="Office" />
       <Button layoutX="239.0" layoutY="400.0" mnemonicParsing="false" text="CONFIRM LOCATION" />
       <Button layoutX="503.0" layoutY="20.0" mnemonicParsing="false" onAction="#StoreButtonAction" prefHeight="25.0" prefWidth="78.0" text="Store &gt;" />
+      <ImageView fitHeight="130.0" fitWidth="200.0" layoutX="199.0" layoutY="97.0" pickOnBounds="true">
+         <image>
+            <Image url="@../../../../Jalu%20Data%20Kuliah/Gambar%20Project/maps.png" />
+         </image>
+      </ImageView>
    </children>
 </AnchorPane>

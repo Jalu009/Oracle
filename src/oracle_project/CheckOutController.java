@@ -2,6 +2,7 @@ package oracle_project;
 
 import java.io.IOException;
 import java.net.URL;
+import java.util.LinkedList;
 import java.util.ResourceBundle;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -22,7 +23,8 @@ import javafx.stage.Stage;
 
 public class CheckOutController implements Initializable {
 
-     ItemList data;
+    ItemList data;
+    
     
     @FXML
     private Label label;
@@ -57,8 +59,10 @@ public class CheckOutController implements Initializable {
     @FXML
     private TableColumn<Item,String> tcDriver;
     
+ 
     @FXML
     private Label lblitem;
+    
     
     @FXML
     private void addButtonAction(ActionEvent event) {
@@ -77,10 +81,16 @@ public class CheckOutController implements Initializable {
         data.setData(name,pn2,item,exp);
         tvItem.setItems(data.getData());
         System.out.println("You clicked me!");
-        label.setText("Check Out"); 
     }
     
-     @FXML
+    @FXML
+    private void DeleteButton(ActionEvent event) {
+//      int a = tvItem.getSelecticonModel().getSelectedIndex();
+  //    tvItem.getItems().remove(a);
+      
+    }
+    
+    @FXML
     private void BackButtonAction(ActionEvent event) throws IOException {
         Parent scene1 = FXMLLoader.load(getClass().getResource("Store.fxml"));
         Scene scene = new Scene(scene1);

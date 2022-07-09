@@ -4,7 +4,9 @@ import javafx.beans.property.SimpleIntegerProperty;
 import javafx.beans.property.SimpleStringProperty;
 
 public class Item {
-     private SimpleStringProperty name;
+
+
+    private SimpleStringProperty name;
     private SimpleIntegerProperty quantityorder;
     private SimpleStringProperty item;
     private SimpleStringProperty driver;
