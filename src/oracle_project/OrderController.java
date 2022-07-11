@@ -17,7 +17,7 @@ public class OrderController implements Initializable {
 
     @FXML
     private void BackButtonAction(ActionEvent event) throws IOException {
-        Parent scene1 = FXMLLoader.load(getClass().getResource("FXMLDocument.fxml"));
+        Parent scene1 = FXMLLoader.load(getClass().getResource("FXMLDocument_1.fxml"));
         Scene scene = new Scene(scene1);
         
         Stage stage = (Stage) ((Node)event.getSource()).getScene().getWindow();

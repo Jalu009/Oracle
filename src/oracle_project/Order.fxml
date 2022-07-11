@@ -29,7 +29,7 @@
       <Button layoutX="503.0" layoutY="20.0" mnemonicParsing="false" onAction="#StoreButtonAction" prefHeight="25.0" prefWidth="78.0" text="Store &gt;" />
       <ImageView fitHeight="130.0" fitWidth="200.0" layoutX="199.0" layoutY="97.0" pickOnBounds="true">
          <image>
-            <Image url="@../../../../Jalu%20Data%20Kuliah/Gambar%20Project/maps.png" />
+            <Image url="@../maps.png" />
          </image>
       </ImageView>
    </children>

@@ -85,8 +85,8 @@ public class CheckOutController implements Initializable {
     
     @FXML
     private void DeleteButton(ActionEvent event) {
-//      int a = tvItem.getSelecticonModel().getSelectedIndex();
-  //    tvItem.getItems().remove(a);
+        int selectedIndex = tvItem.getSelectionModel().getSelectedIndex();
+        tvItem.getItems().remove(selectedIndex);
       
     }
     
@@ -97,7 +97,7 @@ public class CheckOutController implements Initializable {
         
         Stage stage = (Stage) ((Node)event.getSource()).getScene().getWindow();
         stage.setScene(scene);
-        stage.setTitle("Back  ");
+        stage.setTitle("Back");
         stage.show();
         System.out.println("Back Button is clicked");
 }
